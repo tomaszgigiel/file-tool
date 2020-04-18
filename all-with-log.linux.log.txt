@@ -1,0 +1,119 @@
+Script started on 2020-04-18 20:32:56+0200
+/home/tomasz/Documents/workspace-clojure/file-tool
+Compiling pl.tomaszgigiel.file-tool.core
+/home/tomasz/Documents/workspace-clojure/file-tool
+/home/tomasz/Documents/workspace-clojure/file-tool
+Compiling pl.tomaszgigiel.file-tool.core
+
+lein test user
+
+Ran 0 tests containing 0 assertions.
+0 failures, 0 errors.
+/home/tomasz/Documents/workspace-clojure/file-tool
+/home/tomasz/Documents/workspace-clojure/file-tool
+
+lein test pl.tomaszgigiel.file-tool.cmd
+
+lein test pl.tomaszgigiel.file-tool.core
+
+lein test pl.tomaszgigiel.file-tool.test-config
+
+Ran 0 tests containing 0 assertions.
+0 failures, 0 errors.
+/home/tomasz/Documents/workspace-clojure/file-tool
+/home/tomasz/Documents/workspace-clojure/file-tool
+Compiling pl.tomaszgigiel.file-tool.core
+Compiling pl.tomaszgigiel.file-tool.core
+Created /home/tomasz/Documents/workspace-clojure/file-tool/target/uberjar/file-tool.jar
+Created /home/tomasz/Documents/workspace-clojure/file-tool/target/uberjar/file-tool-uberjar.jar
+/home/tomasz/Documents/workspace-clojure/file-tool
+/home/tomasz/Documents/workspace-clojure/file-tool
+Compiling pl.tomaszgigiel.file-tool.core
+Apr 18, 2020 8:33:24 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.replace.input-path: src/test/resources/london-jack-white-fang-v01.txt
+Apr 18, 2020 8:33:24 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.replace.output-path: src/test/resources/london-jack-white-fang-v01-replace.txt
+Apr 18, 2020 8:33:24 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.replace.replacements: [{:old \s, :new 
+} {:old 
+-, :new } {:old [\."“()’—\,!*?;:'/”‘\[\]], :new 
+} {:old [
+]{2,}, :new 
+}]
+Apr 18, 2020 8:33:24 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.distinct-lines.input-path: src/test/resources/london-jack-white-fang-v01-replace.txt
+Apr 18, 2020 8:33:24 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.distinct-lines.output-path: src/test/resources/london-jack-white-fang-v01-replace-distinct.txt
+Apr 18, 2020 8:33:24 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.dedupe-lines.input-path: src/test/resources/london-jack-white-fang-v01-replace-distinct.txt
+Apr 18, 2020 8:33:24 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.dedupe-lines.output-path: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe.txt
+Apr 18, 2020 8:33:24 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.sort-lines.input-path: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe.txt
+Apr 18, 2020 8:33:24 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.sort-lines.output-path: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort.txt
+Apr 18, 2020 8:33:24 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.map-lines.input-path: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort.txt
+Apr 18, 2020 8:33:24 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.map-lines.output-path: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort-map.txt
+Apr 18, 2020 8:33:24 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.map-lines.map: clojure.string/lower-case
+Apr 18, 2020 8:33:25 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.merge-lines.input-path.left: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort-map.txt
+Apr 18, 2020 8:33:25 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.merge-lines.input-path.right: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort-map.txt
+Apr 18, 2020 8:33:25 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.merge-lines.output-path: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort-map-merge.txt
+Apr 18, 2020 8:33:25 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: file-tool.merge-lines.separator: ;
+Apr 18, 2020 8:33:25 PM clojure.tools.logging$eval155$fn__158 invoke
+INFO: ok
+/home/tomasz/Documents/workspace-clojure/file-tool
+/home/tomasz/Documents/workspace-clojure/file-tool
+Compiling pl.tomaszgigiel.file-tool.core
+Compiling pl.tomaszgigiel.file-tool.core
+Created /home/tomasz/Documents/workspace-clojure/file-tool/target/uberjar/file-tool.jar
+Created /home/tomasz/Documents/workspace-clojure/file-tool/target/uberjar/file-tool-uberjar.jar
+Apr 18, 2020 8:33:35 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.replace.input-path: src/test/resources/london-jack-white-fang-v01.txt
+Apr 18, 2020 8:33:35 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.replace.output-path: src/test/resources/london-jack-white-fang-v01-replace.txt
+Apr 18, 2020 8:33:35 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.replace.replacements: [{:old \s, :new 
+} {:old 
+-, :new } {:old [\."“()’—\,!*?;:'/”‘\[\]], :new 
+} {:old [
+]{2,}, :new 
+}]
+Apr 18, 2020 8:33:35 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.distinct-lines.input-path: src/test/resources/london-jack-white-fang-v01-replace.txt
+Apr 18, 2020 8:33:35 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.distinct-lines.output-path: src/test/resources/london-jack-white-fang-v01-replace-distinct.txt
+Apr 18, 2020 8:33:35 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.dedupe-lines.input-path: src/test/resources/london-jack-white-fang-v01-replace-distinct.txt
+Apr 18, 2020 8:33:35 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.dedupe-lines.output-path: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe.txt
+Apr 18, 2020 8:33:36 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.sort-lines.input-path: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe.txt
+Apr 18, 2020 8:33:36 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.sort-lines.output-path: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort.txt
+Apr 18, 2020 8:33:36 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.map-lines.input-path: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort.txt
+Apr 18, 2020 8:33:36 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.map-lines.output-path: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort-map.txt
+Apr 18, 2020 8:33:36 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.map-lines.map: clojure.string/lower-case
+Apr 18, 2020 8:33:36 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.merge-lines.input-path.left: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort-map.txt
+Apr 18, 2020 8:33:36 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.merge-lines.input-path.right: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort-map.txt
+Apr 18, 2020 8:33:36 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.merge-lines.output-path: src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort-map-merge.txt
+Apr 18, 2020 8:33:36 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: file-tool.merge-lines.separator: ;
+Apr 18, 2020 8:33:36 PM clojure.tools.logging$eval136$fn__139 invoke
+INFO: ok
+/home/tomasz/Documents/workspace-clojure/file-tool
+/home/tomasz/Documents/workspace-clojure/file-tool
+
+Script done on 2020-04-18 20:33:36+0200

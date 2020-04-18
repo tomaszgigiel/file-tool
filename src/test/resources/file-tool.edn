@@ -1,0 +1,33 @@
+[
+ {
+  :file-tool.replace.input-path "src/test/resources/london-jack-white-fang-v01.txt"
+  :file-tool.replace.output-path "src/test/resources/london-jack-white-fang-v01-replace.txt"
+  :file-tool.replace.replacements [{:old "\\s" :new "\r\n"}
+                                           {:old "\r\n-" :new ""}
+                                           {:old "[\\.\"“()’—\\,!*?;:'/”‘\\[\\]]" :new "\r\n"}
+                                           {:old "[\r\n]{2,}" :new "\r\n"}]
+  }
+ {
+  :file-tool.distinct-lines.input-path "src/test/resources/london-jack-white-fang-v01-replace.txt"
+  :file-tool.distinct-lines.output-path "src/test/resources/london-jack-white-fang-v01-replace-distinct.txt"
+  }
+ {
+  :file-tool.dedupe-lines.input-path "src/test/resources/london-jack-white-fang-v01-replace-distinct.txt"
+  :file-tool.dedupe-lines.output-path "src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe.txt"
+  }
+ {
+  :file-tool.sort-lines.input-path "src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe.txt"
+  :file-tool.sort-lines.output-path "src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort.txt"
+  }
+ {
+  :file-tool.map-lines.input-path "src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort.txt"
+  :file-tool.map-lines.output-path "src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort-map.txt"
+  :file-tool.map-lines.map "clojure.string/lower-case"
+  }
+ {
+  :file-tool.merge-lines.input-path.left "src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort-map.txt"
+  :file-tool.merge-lines.input-path.right "src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort-map.txt"
+  :file-tool.merge-lines.output-path "src/test/resources/london-jack-white-fang-v01-replace-distinct-dedupe-sort-map-merge.txt"
+  :file-tool.merge-lines.separator ";"
+  }
+]
